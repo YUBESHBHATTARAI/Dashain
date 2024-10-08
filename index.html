@@ -9,31 +9,38 @@
 </head>
 
 <body>
-    <div>
-        <div class="mx-3 my-5">
-            <div id="test" >
-               <h1 class="text-white">Hello</h1>
-             <p></p>
-               <img  class="" src="img/maa durga.png" alt="">
+    <div class=" bg-red-200 border border-2">
+        <div class="flex justify-center items-center min-h-screen rounded-md shadow-lg ">
+            <div class=" flex flex-col justify-between items-center h-[90vh] w-[90vw] " id="test">
+                <img class=" h-[30vh] w-[30vh]  " src="img/maa durga.png" alt="">
+                <div>
+                    <h1 class="text-white border border-2 border-black-200 mx-3  px-3 py-3 text-3xl ">
+                        Wishing you a very happy Dashain, Tihar, and Chhath! May these festivals bring joy, peace, and prosperity to your life. Enjoy the celebrations with love and happiness. Best wishes!</h1>
+                    <p class="text-white border border-2 mx-3 my-3  px-3 py-3 text-3xl ">
+                        तपाईँलाई दशैं, तिहार र छठको धेरै धेरै शुभकामना! यी चाडपर्वहरूले तपाईँको जीवनमा खुशी, शान्ति, र समृद्धि ल्याओस्। परिवारसँग हर्ष र उमंगका साथ रमाइलो गर्नुस्। शुभकामना!</p>
+                </div>
+               
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     <script>
-    VANTA.DOTS({
-        el: "#test",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        size: 7.50,
-        spacing: 63.00
-      })
-      </script>
+        VANTA.FOG({
+            el: "#test",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xf4b500,
+            midtoneColor: 0xf72807,
+            lowlightColor: 0x2e00ef,
+            blurFactor: 0.47,
+            speed: 1.70,
+            zoom: 1.20
+        })
+    </script>
 </body>
 
 </html>
