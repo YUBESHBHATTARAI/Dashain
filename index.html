@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Dashain</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="img/maa durga.png">
+
 </head>
 
 <body class="bg-gray-100 min-h-screen flex items-center justify-center ">
 
 
-    <div class="bg-white border border-gray-300  shadow-xl max-w-md md:max-w-md p-6" id="test">
+    <div class="bg-white shadow-2xl max-w-md md:max-w-md p-6 rounded-xl" id="test">
         <div class="flex flex-col items-center">
             <!-- Card Image -->
             <img class="h-72 w-auto rounded-xl shadow-md mb-6" src="img/maa durga.png" alt="Maa Durga">
+            <!-- border -->
 
             <!-- Card Content -->
-            <div class="text-center space-y-4">
+            <div class="text-center space-y-4 ">
                 <!-- English Text -->
                 <h1 class="text-gray-800 font-bold text-xl text-justify">
-                    Wishing you a happy Dashain, Tihar, and Chhath! May these festivals bring joy, peace, and prosperity
+                    Wishing you a happy Dashain, Tihar, and Chhath! May these festivals bring joy, peace, and
+                    prosperity
                     to your life. Best wishes.
                 </h1>
 
@@ -29,13 +33,16 @@
                     तपाईँलाई दशैं, तिहार र छठको धेरै धेरै शुभकामना! यी चाडपर्वहरूले तपाईँको जीवनमा खुशी, शान्ति, र
                     समृद्धि ल्याओस्। परिवारसँग हर्ष र उमंगका साथ रमाइलो गर्नुस्। शुभकामना!
                 </p>
-                <audio id="bg-music" loop hidden autoplay>
+                <audio id="bg-music" loop autoplay>
                     <source src="img/audio.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
 
-                <button onclick="document.getElementById('bg-music').play()">***</button>
+                <button onclick="document.getElementById('bg-music').play()">
+                    <span class=" bg-green-500  text-gray-200 font-bold  px-2 py-2">MUSIC</span>
+                </button>
             </div>
+
         </div>
     </div>
 
